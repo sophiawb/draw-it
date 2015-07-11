@@ -4,12 +4,24 @@
   <title>Draw It</title>
   <link rel="stylesheet" href="styles.css">
   <script type="text/javascript" src="lib/d3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="title">Title of Graph Goes Here</div>
-  <svg class="graph"> 
-  </svg>
+  <div class="container">
+    <h1 class="title"> Title of Graph Goes Here </h1>
+    <svg class="graph"> 
+    </svg>
+    <text class="x-axis-title"></text>
+    <text class="y-axis-title"></text>
+    <div>
+      <button class="btn btn-default show-graph">Show Graph</button>
+      <button class="btn btn-default redraw">Redraw Graph</button>
+    </div>
+  </div>
   <script src="lifeExpectancy.js"></script>
   <script src="drawIt.js"></script>
 </body>
-</html>s
+</html>
